@@ -6,7 +6,7 @@ import { storeToRefs } from 'pinia';
 
 const main = useCounterStore()
 
-const { counter, name } = storeToRefs(main)
+const { counter, name, doubleCount } = storeToRefs(main)
 const { addOne, reset } = main
 
 // function add(value: number) {
@@ -26,7 +26,7 @@ const { addOne, reset } = main
     | {{ name }}
   </h3>
   <h4 class="text-9xl my-4">
-    {{ counter }} <span class="text-3xl">x 2 = {{ main.doubleCount }}</span>
+    {{ counter }} <span class="text-3xl">x 2 = {{ doubleCount }}</span>
   </h4>
   <div class="space-x-2">
     <button
