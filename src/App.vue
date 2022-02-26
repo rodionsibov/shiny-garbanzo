@@ -18,6 +18,10 @@ const { addOne, reset } = main
 // function reset() {
 //   main.$reset()
 // }
+
+// function clear() {
+//   main.$state = { counter: 123, name: 'bob' }
+// }
 </script>
 
 <template>
@@ -26,7 +30,8 @@ const { addOne, reset } = main
     | {{ name }}
   </h3>
   <h4 class="text-9xl my-4">
-    {{ counter }} <span class="text-3xl">x 2 = {{ doubleCount }}</span>
+    {{ counter }}
+    <span class="text-3xl">x 2 = {{ doubleCount }}</span>
   </h4>
   <div class="space-x-2">
     <button
