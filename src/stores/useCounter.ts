@@ -3,11 +3,11 @@ import { defineStore } from 'pinia'
 export const useCounterStore = defineStore('main', {
     state: () => ({
         counter: 0,
-        name: 'Max'
+        name: 'Pinia'
     }),
     getters: {
         doubleCount: (state) => {
-            state.counter * 2
+            return state.counter * 2
         }
     },
     actions: {
